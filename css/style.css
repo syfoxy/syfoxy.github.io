@@ -1,0 +1,124 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  /*background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/header2.jpg);  
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-color:#343a40;
+  padding: 100px 0 50px;   
+}
+
+h1{
+	color: white;
+	font-size:6em;
+	font-weight:bold;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 100px 0 65px;
+  }
+  
+}
+@media (max-width: 992px){
+	  btn .btn-success{
+		  margin-bottom: 10px;
+	  }
+	  
+	  .img1cl1{
+		  margin-top:20px;
+	  }
+  }
+@media (max-width:370px){
+	.img__wrap:hover .img__description_layer {
+		visibility:hidden;	
+		opacity:0;
+	}
+	.img__wrap:hover .img__description {
+		visibility:hidden;
+		opacity:0;
+	}
+	.img__description_layer{
+		transition: opacity 0s, visibility 0s;
+	}
+}
+section {
+  padding: 150px 0;
+}
+.img__wrap {
+  position: relative;
+  
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right:15px;
+  padding-top:5px;
+
+  /* transition effect. not necessary */
+  /*transition: opacity .2s, visibility .2s;*/
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  font-size:1.1rem;
+  transition: .2s;
+  transform: translateY(1em);
+  
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+.carousel-control-prev-icon{
+	height:40px;
+	width:40px;
+}
+.carousel-control-next-icon{
+	height:40px;
+	width:40px;
+}
+.btn-success{
+	width:250px;
+	/*height: 60px;*/
+	/*justify-content:center;
+	align-items:center;
+	text-align:center;
+	vertical-align: middle;*/
+	line-height:50px;
+}
+.exxdee{
+	display:flex;
+	align-items:center;
+}
+
+.chart-container {
+    margin: 0 auto;
+	padding-top: 30px;
+}
+#line-chartcanvas{
+	width:550px;
+	height:auto;
+}
+
